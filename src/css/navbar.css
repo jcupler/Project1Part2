@@ -1,0 +1,94 @@
+body {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    padding-top:2rem;
+    min-height: 100vh;
+}
+
+body .container-fluid {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+body .container-fluid .row {
+    flex: 1;
+}
+
+.custom-navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-nav-links{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.navbar-toggler {
+    transition: transform 0.5s ease;
+    border:none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+    box-shadow: none;
+}
+
+.navbar-toggler[aria-expanded="true"] {
+    transform: rotate(90deg);
+}
+
+.btn-primary {
+    background:black;
+    margin-top: 2rem;
+    width:10rem;
+}
+
+.btn-primary:hover{
+    background:black;
+    transform: translateX(0rem) scale(1.2);
+    box-shadow: 0.25rem 0.25rem 0.5rem black;
+}
+
+#bannerCarousel {
+    width:100%;
+    aspect-ratio:16 / 9;
+    margin:0 auto;
+    max-height: 40rem;
+}
+
+#bannerCarousel .carousel-inner,
+#bannerCarousel .carousel-item {
+    height: 100%;
+}
+
+#bannerCarousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* Note these can be overwritten in each respect .css */
+.content-area{
+    flex: 1;
+    height:auto;
+    border: black inset 0.25rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.content-area h3 {
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
