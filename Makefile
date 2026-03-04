@@ -7,6 +7,12 @@ run-container:
 stop-container:
 	docker stop $(shell docker ps -q --filter ancestor=app:latest)
 
+destroy-image:
+	docker image rm app:latest
+
+prune-container:
+	docker container prune
+
 local-web:
 	cd src
 	python -m http.server 8000
