@@ -1,5 +1,4 @@
-FROM nginx:1.29.5-alpine
-COPY /src /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/nginx.conf
+FROM httpd:2.4.57-alpine
+COPY /src /usr/share/apache2/htdocs
+COPY httpd.conf /usr/local/apache2/conf/httpd.conf
 EXPOSE 80
-# CMD ["python", "-m", "http.server", "80"]
