@@ -1,5 +1,3 @@
-console.log("signinform.js loaded");
-
 function CreateAccountForm(
     {
         createName,
