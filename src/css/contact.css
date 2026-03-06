@@ -1,0 +1,16 @@
+.content-area{
+    flex: 1;
+    height:auto;
+    border: black inset 0.25rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.content-area h3 {
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    margin-top: 0;
+}

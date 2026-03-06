@@ -3,5 +3,7 @@ function redirect(product) {
 }
 
 document.querySelectorAll(".productImage").forEach(img => {
-    img.addEventListener("click", redirect(this.dataset.product));
+    img.addEventListener("click", function() {
+        redirect(this.dataset.product);
+    });
 });

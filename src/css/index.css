@@ -1,0 +1,20 @@
+.content-area{
+    flex: 1;
+    height:auto;
+    border: black inset 0.25rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.content-area h3 {
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.info-area {
+    border: black solid 0.25rem;
+    margin-top: 2rem;
+    border-bottom:none;
+    border-left:none;
+    border-right:none;
+}

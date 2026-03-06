@@ -1,0 +1,28 @@
+body {
+    border: black solid 0.25rem;
+}
+
+.btn-primary {
+    margin-top: 0;
+}
+
+.content-area{
+    flex: 1;
+    height:auto;
+    border: black inset 0.25rem;
+    padding-bottom: 4rem;
+    margin-top: 0;
+}
+
+.content-area h1 {
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    align-self: center;
+}
+
+.img-fluid{
+    width:80%;
+    aspect-ratio:16 / 9;
+    margin: 1rem auto;
+    max-height: 40rem;
+}
