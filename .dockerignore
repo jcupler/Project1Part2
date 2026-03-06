@@ -1,2 +1,4 @@
 .gitignore
 .dockerignore
+Makefile
+Dockerfile
