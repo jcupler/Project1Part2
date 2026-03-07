@@ -8,7 +8,10 @@ stop-container:
 	docker stop $(shell docker ps -q --filter ancestor=app:latest)
 
 destroy-image:
-	docker image rm app:latest
+	docker image rm app:latest 
+
+export-image:
+	docker save app:latest | gzip > src/DockerContainer/app.tar.gz
 
 prune-container:
 	docker container prune
