@@ -13,6 +13,9 @@ destroy-image:
 export-image:
 	docker save app:latest | gzip > src/DockerContainer/app.tar.gz
 
+load-image:
+	docker load -i src/DockerContainer/app.tar.gz
+
 prune-container:
 	docker container prune
 
